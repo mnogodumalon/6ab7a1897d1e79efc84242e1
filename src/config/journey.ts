@@ -34,5 +34,6 @@ export interface OccupancyRule {
 
 export const OCCUPANCY: Partial<Record<EntityKey, OccupancyRule>> = {
   // <custom:occupancy>
+  ressourcenzuweisungen: { from: 'zuweisung_start', to: 'zuweisung_ende', resource: 'ressource' },
   // </custom:occupancy>
 };
