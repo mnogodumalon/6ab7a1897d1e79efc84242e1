@@ -31,7 +31,7 @@ export default function RessourceZuweisenPage() {
 
   // Step 1: Aufgaben — nur aktive (nicht_begonnen, in_bearbeitung)
   const aufgaben = useRecordSearch(servicePort, 'aufgaben', {
-    filter: "r.v_status in ['nicht_begonnen', 'in_bearbeitung']",
+    filter: "r.v_status in ['nicht_begonnen', 'in_bearbeitung']", /* i18n-exempt */
     where: r => {
       const key = fieldLookup(r, 'status')?.key;
       return key === 'nicht_begonnen' || key === 'in_bearbeitung';

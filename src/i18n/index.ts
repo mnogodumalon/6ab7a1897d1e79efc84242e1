@@ -1386,7 +1386,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "kostensatz": "Cost Rate (€/Hour)",
           "verfuegbarkeit_prozent": "Availability (%)",
           "eintrittsdatum": "Available From",
-          "austrittsdatum": "Available Until"
+          "austrittsdatum": "Available To"
         },
         "lookups": {}
       },

@@ -365,7 +365,7 @@ export function RessourcenDialog({ open, onClose, onSubmit, defaultValues, recor
         <Label htmlFor="vorname">{fieldLabel('ressourcen', 'vorname')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="vorname"
-          placeholder="z. B. Maria"
+          placeholder=""
           value={fields.vorname ?? ''}
           onChange={e => setFields(f => ({ ...f, vorname: e.target.value }))}
           required
@@ -380,7 +380,7 @@ export function RessourcenDialog({ open, onClose, onSubmit, defaultValues, recor
         <Label htmlFor="nachname">{fieldLabel('ressourcen', 'nachname')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="nachname"
-          placeholder="z. B. Schmidt"
+          placeholder=""
           value={fields.nachname ?? ''}
           onChange={e => setFields(f => ({ ...f, nachname: e.target.value }))}
           required
@@ -397,7 +397,7 @@ export function RessourcenDialog({ open, onClose, onSubmit, defaultValues, recor
           id="email"
           type="email"
           inputMode="email"
-          placeholder="z. B. maria@example.de"
+          placeholder=""
           value={fields.email ?? ''}
           onChange={e => setFields(f => ({ ...f, email: e.target.value }))}
         />
@@ -408,7 +408,7 @@ export function RessourcenDialog({ open, onClose, onSubmit, defaultValues, recor
         <Label htmlFor="notizen">{fieldLabel('ressourcen', 'notizen')}</Label>
         <Textarea
           id="notizen"
-          placeholder="Besonderheiten, Fähigkeiten, Abwesenheiten..."
+          placeholder=""
           value={fields.notizen ?? ''}
           onChange={e => setFields(f => ({ ...f, notizen: e.target.value }))}
           rows={3}
@@ -433,7 +433,7 @@ export function RessourcenDialog({ open, onClose, onSubmit, defaultValues, recor
         <Label htmlFor="organisation">{fieldLabel('ressourcen', 'organisation')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Combobox
           id="organisation"
-          placeholder="Welche Organisation?"
+          placeholder=""
           items={organisationenListAll.map(r => ({
             id: r.record_id,
             label: String(r.fields.name ?? r.record_id),
@@ -453,7 +453,7 @@ export function RessourcenDialog({ open, onClose, onSubmit, defaultValues, recor
         <Label htmlFor="rolle">{fieldLabel('ressourcen', 'rolle')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Combobox
           id="rolle"
-          placeholder="Welche Rolle?"
+          placeholder=""
           items={rollenListAll.map(r => ({
             id: r.record_id,
             label: String(r.fields.rollenname ?? r.record_id),
@@ -477,7 +477,7 @@ export function RessourcenDialog({ open, onClose, onSubmit, defaultValues, recor
           inputMode="decimal"
           step="any"
           {...numberInputProps(formEnhancements, 'kostensatz')}
-          placeholder="z. B. 85,00"
+          placeholder=""
           value={fields.kostensatz !== undefined ? fields.kostensatz : (computedValues['kostensatz'] ?? '')}
           onChange={e => setFields(f => ({ ...f, kostensatz: clampNumberValue(formEnhancements, 'kostensatz', e.target.value) }))}
         />
@@ -492,7 +492,7 @@ export function RessourcenDialog({ open, onClose, onSubmit, defaultValues, recor
           inputMode="decimal"
           step="any"
           {...numberInputProps(formEnhancements, 'verfuegbarkeit_prozent')}
-          placeholder="z. B. 100"
+          placeholder=""
           value={fields.verfuegbarkeit_prozent !== undefined ? fields.verfuegbarkeit_prozent : (computedValues['verfuegbarkeit_prozent'] ?? '')}
           onChange={e => setFields(f => ({ ...f, verfuegbarkeit_prozent: clampNumberValue(formEnhancements, 'verfuegbarkeit_prozent', e.target.value) }))}
         />
@@ -503,7 +503,7 @@ export function RessourcenDialog({ open, onClose, onSubmit, defaultValues, recor
         <Label htmlFor="eintrittsdatum">{fieldLabel('ressourcen', 'eintrittsdatum')}</Label>
         <DatePicker
           id="eintrittsdatum"
-          placeholder="Wann verfügbar ab?"
+          placeholder=""
           mode="date"
           value={fields.eintrittsdatum ?? null}
           onChange={v => setFields(f => ({ ...f, eintrittsdatum: v ?? undefined }))}
@@ -515,7 +515,7 @@ export function RessourcenDialog({ open, onClose, onSubmit, defaultValues, recor
         <Label htmlFor="austrittsdatum">{fieldLabel('ressourcen', 'austrittsdatum')}</Label>
         <DatePicker
           id="austrittsdatum"
-          placeholder="Wann verfügbar bis?"
+          placeholder=""
           mode="date"
           value={fields.austrittsdatum ?? null}
           onChange={v => setFields(f => ({ ...f, austrittsdatum: v ?? undefined }))}

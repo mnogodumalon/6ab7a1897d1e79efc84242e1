@@ -365,7 +365,7 @@ export function RessourcenzuweisungenDialog({ open, onClose, onSubmit, defaultVa
         <Label htmlFor="ressource">{fieldLabel('ressourcenzuweisungen', 'ressource')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Combobox
           id="ressource"
-          placeholder="Welche Ressource zuweisen?"
+          placeholder=""
           items={ressourcenListAll.map(r => ({
             id: r.record_id,
             label: String(r.fields.vorname ?? r.record_id),
@@ -385,7 +385,7 @@ export function RessourcenzuweisungenDialog({ open, onClose, onSubmit, defaultVa
         <Label htmlFor="zuweisung_start">{fieldLabel('ressourcenzuweisungen', 'zuweisung_start')}</Label>
         <DatePicker
           id="zuweisung_start"
-          placeholder="Wann beginnt die Zuweisung?"
+          placeholder=""
           mode="date"
           value={fields.zuweisung_start ?? null}
           onChange={v => setFields(f => ({ ...f, zuweisung_start: v ?? undefined }))}
@@ -397,7 +397,7 @@ export function RessourcenzuweisungenDialog({ open, onClose, onSubmit, defaultVa
         <Label htmlFor="zuweisung_ende">{fieldLabel('ressourcenzuweisungen', 'zuweisung_ende')}</Label>
         <DatePicker
           id="zuweisung_ende"
-          placeholder="Wann endet die Zuweisung?"
+          placeholder=""
           mode="date"
           value={fields.zuweisung_ende ?? null}
           onChange={v => setFields(f => ({ ...f, zuweisung_ende: v ?? undefined }))}
@@ -413,7 +413,7 @@ export function RessourcenzuweisungenDialog({ open, onClose, onSubmit, defaultVa
           inputMode="decimal"
           step="any"
           {...numberInputProps(formEnhancements, 'geplanter_aufwand_stunden')}
-          placeholder="z. B. 40"
+          placeholder=""
           value={fields.geplanter_aufwand_stunden !== undefined ? fields.geplanter_aufwand_stunden : (computedValues['geplanter_aufwand_stunden'] ?? '')}
           onChange={e => setFields(f => ({ ...f, geplanter_aufwand_stunden: clampNumberValue(formEnhancements, 'geplanter_aufwand_stunden', e.target.value) }))}
         />
@@ -428,7 +428,7 @@ export function RessourcenzuweisungenDialog({ open, onClose, onSubmit, defaultVa
           inputMode="decimal"
           step="any"
           {...numberInputProps(formEnhancements, 'tatsaechlicher_aufwand_stunden')}
-          placeholder="z. B. 38"
+          placeholder=""
           value={fields.tatsaechlicher_aufwand_stunden !== undefined ? fields.tatsaechlicher_aufwand_stunden : (computedValues['tatsaechlicher_aufwand_stunden'] ?? '')}
           onChange={e => setFields(f => ({ ...f, tatsaechlicher_aufwand_stunden: clampNumberValue(formEnhancements, 'tatsaechlicher_aufwand_stunden', e.target.value) }))}
         />
@@ -443,7 +443,7 @@ export function RessourcenzuweisungenDialog({ open, onClose, onSubmit, defaultVa
           inputMode="decimal"
           step="any"
           {...numberInputProps(formEnhancements, 'auslastung_prozent')}
-          placeholder="z. B. 100"
+          placeholder=""
           value={fields.auslastung_prozent !== undefined ? fields.auslastung_prozent : (computedValues['auslastung_prozent'] ?? '')}
           onChange={e => setFields(f => ({ ...f, auslastung_prozent: clampNumberValue(formEnhancements, 'auslastung_prozent', e.target.value) }))}
         />
@@ -454,7 +454,7 @@ export function RessourcenzuweisungenDialog({ open, onClose, onSubmit, defaultVa
         <Label htmlFor="notizen">{fieldLabel('ressourcenzuweisungen', 'notizen')}</Label>
         <Textarea
           id="notizen"
-          placeholder="Besonderheiten, Anmerkungen..."
+          placeholder=""
           value={fields.notizen ?? ''}
           onChange={e => setFields(f => ({ ...f, notizen: e.target.value }))}
           rows={3}
@@ -466,7 +466,7 @@ export function RessourcenzuweisungenDialog({ open, onClose, onSubmit, defaultVa
         <Label htmlFor="aufgabe">{fieldLabel('ressourcenzuweisungen', 'aufgabe')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Combobox
           id="aufgabe"
-          placeholder="Zu welcher Aufgabe?"
+          placeholder=""
           items={aufgabenListAll.map(r => ({
             id: r.record_id,
             label: String(r.fields.aufgabenname ?? r.record_id),

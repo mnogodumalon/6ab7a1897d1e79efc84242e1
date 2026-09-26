@@ -287,7 +287,7 @@ export function OrganisationenDialog({ open, onClose, onSubmit, defaultValues, r
         <Label htmlFor="notizen">{fieldLabel('organisationen', 'notizen')}</Label>
         <Textarea
           id="notizen"
-          placeholder="Interne Vermerke, Kontakt-Details..."
+          placeholder=""
           value={fields.notizen ?? ''}
           onChange={e => setFields(f => ({ ...f, notizen: e.target.value }))}
           rows={3}
@@ -299,7 +299,7 @@ export function OrganisationenDialog({ open, onClose, onSubmit, defaultValues, r
         <Label htmlFor="name">{fieldLabel('organisationen', 'name')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="name"
-          placeholder="z. B. ACME GmbH"
+          placeholder=""
           value={fields.name ?? ''}
           onChange={e => setFields(f => ({ ...f, name: e.target.value }))}
           required
@@ -314,7 +314,7 @@ export function OrganisationenDialog({ open, onClose, onSubmit, defaultValues, r
         <Label htmlFor="abteilungsleiter_vorname">{fieldLabel('organisationen', 'abteilungsleiter_vorname')}</Label>
         <Input
           id="abteilungsleiter_vorname"
-          placeholder="z. B. Hans"
+          placeholder=""
           value={fields.abteilungsleiter_vorname ?? ''}
           onChange={e => setFields(f => ({ ...f, abteilungsleiter_vorname: e.target.value }))}
         />
@@ -325,7 +325,7 @@ export function OrganisationenDialog({ open, onClose, onSubmit, defaultValues, r
         <Label htmlFor="abteilungsleiter_nachname">{fieldLabel('organisationen', 'abteilungsleiter_nachname')}</Label>
         <Input
           id="abteilungsleiter_nachname"
-          placeholder="z. B. Müller"
+          placeholder=""
           value={fields.abteilungsleiter_nachname ?? ''}
           onChange={e => setFields(f => ({ ...f, abteilungsleiter_nachname: e.target.value }))}
         />
@@ -336,7 +336,7 @@ export function OrganisationenDialog({ open, onClose, onSubmit, defaultValues, r
         <Label htmlFor="standort">{fieldLabel('organisationen', 'standort')}</Label>
         <Input
           id="standort"
-          placeholder="z. B. München"
+          placeholder=""
           value={fields.standort ?? ''}
           onChange={e => setFields(f => ({ ...f, standort: e.target.value }))}
         />
@@ -347,7 +347,7 @@ export function OrganisationenDialog({ open, onClose, onSubmit, defaultValues, r
         <Label htmlFor="kuerzel">{fieldLabel('organisationen', 'kuerzel')}</Label>
         <Input
           id="kuerzel"
-          placeholder="z. B. ACME"
+          placeholder=""
           value={fields.kuerzel ?? ''}
           onChange={e => setFields(f => ({ ...f, kuerzel: e.target.value }))}
         />
@@ -358,7 +358,7 @@ export function OrganisationenDialog({ open, onClose, onSubmit, defaultValues, r
         <Label htmlFor="beschreibung">{fieldLabel('organisationen', 'beschreibung')}</Label>
         <Textarea
           id="beschreibung"
-          placeholder="Tätigkeit, Größe, Besonderheiten..."
+          placeholder=""
           value={fields.beschreibung ?? ''}
           onChange={e => setFields(f => ({ ...f, beschreibung: e.target.value }))}
           rows={3}

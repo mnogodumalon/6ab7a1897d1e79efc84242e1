@@ -345,7 +345,7 @@ export function AufgabenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="aufgabenname">{fieldLabel('aufgaben', 'aufgabenname')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="aufgabenname"
-          placeholder="z. B. Login implementieren"
+          placeholder=""
           value={fields.aufgabenname ?? ''}
           onChange={e => setFields(f => ({ ...f, aufgabenname: e.target.value }))}
           required
@@ -413,7 +413,7 @@ export function AufgabenDialog({ open, onClose, onSubmit, defaultValues, recordI
           inputMode="decimal"
           step="any"
           {...numberInputProps(formEnhancements, 'fertigstellungsgrad')}
-          placeholder="0–100 %"
+          placeholder=""
           value={fields.fertigstellungsgrad !== undefined ? fields.fertigstellungsgrad : (computedValues['fertigstellungsgrad'] ?? '')}
           onChange={e => setFields(f => ({ ...f, fertigstellungsgrad: clampNumberValue(formEnhancements, 'fertigstellungsgrad', e.target.value) }))}
         />
@@ -436,7 +436,7 @@ export function AufgabenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="geplantes_ende">{fieldLabel('aufgaben', 'geplantes_ende')}</Label>
         <DatePicker
           id="geplantes_ende"
-          placeholder="Wann soll es fertig sein?"
+          placeholder=""
           mode="date"
           value={fields.geplantes_ende ?? null}
           onChange={v => setFields(f => ({ ...f, geplantes_ende: v ?? undefined }))}
@@ -452,7 +452,7 @@ export function AufgabenDialog({ open, onClose, onSubmit, defaultValues, recordI
           inputMode="decimal"
           step="any"
           {...numberInputProps(formEnhancements, 'geplante_dauer_tage')}
-          placeholder="Wie viele Tage einplanen?"
+          placeholder=""
           value={fields.geplante_dauer_tage !== undefined ? fields.geplante_dauer_tage : (computedValues['geplante_dauer_tage'] ?? '')}
           onChange={e => setFields(f => ({ ...f, geplante_dauer_tage: clampNumberValue(formEnhancements, 'geplante_dauer_tage', e.target.value) }))}
         />
@@ -463,7 +463,7 @@ export function AufgabenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="tatsaechlicher_start">{fieldLabel('aufgaben', 'tatsaechlicher_start')}</Label>
         <DatePicker
           id="tatsaechlicher_start"
-          placeholder="Wann hat es angefangen?"
+          placeholder=""
           mode="date"
           value={fields.tatsaechlicher_start ?? null}
           onChange={v => setFields(f => ({ ...f, tatsaechlicher_start: v ?? undefined }))}
@@ -475,7 +475,7 @@ export function AufgabenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="tatsaechliches_ende">{fieldLabel('aufgaben', 'tatsaechliches_ende')}</Label>
         <DatePicker
           id="tatsaechliches_ende"
-          placeholder="Wann wurde es fertig?"
+          placeholder=""
           mode="date"
           value={fields.tatsaechliches_ende ?? null}
           onChange={v => setFields(f => ({ ...f, tatsaechliches_ende: v ?? undefined }))}
@@ -491,7 +491,7 @@ export function AufgabenDialog({ open, onClose, onSubmit, defaultValues, recordI
           inputMode="decimal"
           step="any"
           {...numberInputProps(formEnhancements, 'geschaetzter_aufwand_stunden')}
-          placeholder="z. B. 40"
+          placeholder=""
           value={fields.geschaetzter_aufwand_stunden !== undefined ? fields.geschaetzter_aufwand_stunden : (computedValues['geschaetzter_aufwand_stunden'] ?? '')}
           onChange={e => setFields(f => ({ ...f, geschaetzter_aufwand_stunden: clampNumberValue(formEnhancements, 'geschaetzter_aufwand_stunden', e.target.value) }))}
         />
@@ -506,7 +506,7 @@ export function AufgabenDialog({ open, onClose, onSubmit, defaultValues, recordI
           inputMode="decimal"
           step="any"
           {...numberInputProps(formEnhancements, 'tatsaechlicher_aufwand_stunden')}
-          placeholder="z. B. 42"
+          placeholder=""
           value={fields.tatsaechlicher_aufwand_stunden !== undefined ? fields.tatsaechlicher_aufwand_stunden : (computedValues['tatsaechlicher_aufwand_stunden'] ?? '')}
           onChange={e => setFields(f => ({ ...f, tatsaechlicher_aufwand_stunden: clampNumberValue(formEnhancements, 'tatsaechlicher_aufwand_stunden', e.target.value) }))}
         />
@@ -576,7 +576,7 @@ export function AufgabenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="beschreibung">{fieldLabel('aufgaben', 'beschreibung')}</Label>
         <Textarea
           id="beschreibung"
-          placeholder="Was ist zu tun? Anforderungen, Akzeptanzkriterien, Anmerkungen..."
+          placeholder=""
           value={fields.beschreibung ?? ''}
           onChange={e => setFields(f => ({ ...f, beschreibung: e.target.value }))}
           rows={3}
@@ -663,7 +663,7 @@ export function AufgabenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="geplanter_start">{fieldLabel('aufgaben', 'geplanter_start')}</Label>
         <DatePicker
           id="geplanter_start"
-          placeholder="Wann soll es starten?"
+          placeholder=""
           mode="date"
           value={fields.geplanter_start ?? null}
           onChange={v => setFields(f => ({ ...f, geplanter_start: v ?? undefined }))}
@@ -675,7 +675,7 @@ export function AufgabenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="uebergeordnete_aufgabe">{fieldLabel('aufgaben', 'uebergeordnete_aufgabe')}</Label>
         <Combobox
           id="uebergeordnete_aufgabe"
-          placeholder="Zu welcher Sammelaufgabe gehört diese?"
+          placeholder=""
           items={aufgabenList.map(r => ({
             id: r.record_id,
             label: String(r.fields.aufgabenname ?? r.record_id),
@@ -690,7 +690,7 @@ export function AufgabenDialog({ open, onClose, onSubmit, defaultValues, recordI
         <Label htmlFor="vorgaenger">{fieldLabel('aufgaben', 'vorgaenger')}</Label>
         <MultiCombobox
           id="vorgaenger"
-          placeholder="Welche Aufgaben müssen vorher erledigt sein?"
+          placeholder=""
           items={aufgabenList.map(r => ({
             id: r.record_id,
             label: String(r.fields.aufgabenname ?? r.record_id),

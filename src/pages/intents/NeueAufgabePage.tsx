@@ -50,7 +50,7 @@ export default function NeueAufgabePage() {
 
   // Suche: Sammelaufgaben als übergeordnete Aufgabe (nur aufgabentyp == 'sammelaufgabe')
   const elternAufgaben = useRecordSearch(servicePort, 'aufgaben', {
-    filter: "r.v_aufgabentyp == 'sammelaufgabe'",
+    filter: "r.v_aufgabentyp == 'sammelaufgabe'", /* i18n-exempt */
     where: r => fieldLookup(r, 'aufgabentyp')?.key === 'sammelaufgabe',
     searchFields: ['aufgabenname'],
     toItem: a => ({

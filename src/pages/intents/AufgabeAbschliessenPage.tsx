@@ -30,7 +30,7 @@ export default function AufgabeAbschliessenPage() {
   const [selectedId, setSelectedId] = useState<string | undefined>(undefined);
 
   const aufgaben = useRecordSearch(servicePort, 'aufgaben', {
-    filter: "r.v_status in ['nicht_begonnen', 'in_bearbeitung']",
+    filter: "r.v_status in ['nicht_begonnen', 'in_bearbeitung']", /* i18n-exempt */
     where: r => {
       const s = fieldLookup(r, 'status')?.key;
       return s === 'nicht_begonnen' || s === 'in_bearbeitung';

@@ -43,9 +43,9 @@ export interface IntentLink {
 
 export const INTENTS: IntentLink[] = [
   // <custom:intents>
-  { path: '/intents/neue-aufgabe', label: { de: 'Neue Aufgabe', en: 'New task' }, icon: IconSubtask, description: 'Aufgabe mit Typ, Hierarchie und Vorgängern anlegen' },
-  { path: '/intents/ressource-zuweisen', label: { de: 'Ressource zuweisen', en: 'Assign resource' }, icon: IconUserCheck, description: 'Ressource einer Aufgabe mit Zeitraum und Aufwand zuweisen' },
-  { path: '/intents/aufgabe-abschliessen', label: { de: 'Aufgabe abschließen', en: 'Complete task' }, icon: IconCircleCheck, description: 'Ist-Werte erfassen und Aufgabe als abgeschlossen markieren' },
+  { path: '/intents/neue-aufgabe', label: { de: 'Neue Aufgabe', en: 'New task' }, icon: IconSubtask, description: { de: 'Aufgabe mit Typ, Hierarchie und Vorgängern anlegen', en: 'Create Task with Type, Hierarchy, and Predecessors' } },
+  { path: '/intents/ressource-zuweisen', label: { de: 'Ressource zuweisen', en: 'Assign resource' }, icon: IconUserCheck, description: { de: 'Ressource einer Aufgabe mit Zeitraum und Aufwand zuweisen', en: 'Assign Resource to Task with Time Period and Effort' } },
+  { path: '/intents/aufgabe-abschliessen', label: { de: 'Aufgabe abschließen', en: 'Complete task' }, icon: IconCircleCheck, description: { de: 'Ist-Werte erfassen und Aufgabe als abgeschlossen markieren', en: 'Record Actual Values and Mark Task as Complete' } },
   // </custom:intents>
 ];
 
@@ -65,5 +65,5 @@ export const INTENTS_PENDING = false;
  * pulsing "werden erstellt …" in every deployed Phase-1 bundle forever — no
  * code path redeploys Phase 1 without the flag (live 03.09.2026).
  */
-export const INTENTS_PENDING_SINCE: string | null = '2026-09-26T10:42:28+00:00';
+export const INTENTS_PENDING_SINCE: string | null = null;
 export const PENDING_MAX_MINUTES = 30;

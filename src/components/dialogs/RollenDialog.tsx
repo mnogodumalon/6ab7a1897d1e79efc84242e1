@@ -313,7 +313,7 @@ export function RollenDialog({ open, onClose, onSubmit, defaultValues, recordId,
         <Label htmlFor="rollenname">{fieldLabel('rollen', 'rollenname')} <span className="text-destructive" aria-hidden="true">*</span></Label>
         <Input
           id="rollenname"
-          placeholder="z. B. Senior Developer"
+          placeholder=""
           value={fields.rollenname ?? ''}
           onChange={e => setFields(f => ({ ...f, rollenname: e.target.value }))}
           required
@@ -328,7 +328,7 @@ export function RollenDialog({ open, onClose, onSubmit, defaultValues, recordId,
         <Label htmlFor="rollenkuerzel">{fieldLabel('rollen', 'rollenkuerzel')}</Label>
         <Input
           id="rollenkuerzel"
-          placeholder="z. B. SD"
+          placeholder=""
           value={fields.rollenkuerzel ?? ''}
           onChange={e => setFields(f => ({ ...f, rollenkuerzel: e.target.value }))}
         />
@@ -339,7 +339,7 @@ export function RollenDialog({ open, onClose, onSubmit, defaultValues, recordId,
         <Label htmlFor="beschreibung">{fieldLabel('rollen', 'beschreibung')}</Label>
         <Textarea
           id="beschreibung"
-          placeholder="Aufgaben, Anforderungen, Qualifikationen..."
+          placeholder=""
           value={fields.beschreibung ?? ''}
           onChange={e => setFields(f => ({ ...f, beschreibung: e.target.value }))}
           rows={3}
@@ -353,7 +353,7 @@ export function RollenDialog({ open, onClose, onSubmit, defaultValues, recordId,
           value={lookupKey(fields.kompetenzbereich) ?? ''}
           onValueChange={v => setFields(f => ({ ...f, kompetenzbereich: v === 'none' ? undefined : v as any }))}
         >
-          <SelectTrigger id="kompetenzbereich" className="max-sm:h-11"><SelectValue placeholder="Wähle einen Kompetenzbereich" /></SelectTrigger>
+          <SelectTrigger id="kompetenzbereich" className="max-sm:h-11"><SelectValue placeholder="" /></SelectTrigger>
           <SelectContent>
             <SelectItem value="none">—</SelectItem>
             <SelectItem value="projektmanagement">{lookupLabel('rollen', 'kompetenzbereich', 'projektmanagement') ?? 'Projektmanagement'}</SelectItem>
@@ -372,7 +372,7 @@ export function RollenDialog({ open, onClose, onSubmit, defaultValues, recordId,
         <Label htmlFor="notizen">{fieldLabel('rollen', 'notizen')}</Label>
         <Textarea
           id="notizen"
-          placeholder="Interne Hinweise, Besonderheiten..."
+          placeholder=""
           value={fields.notizen ?? ''}
           onChange={e => setFields(f => ({ ...f, notizen: e.target.value }))}
           rows={3}
