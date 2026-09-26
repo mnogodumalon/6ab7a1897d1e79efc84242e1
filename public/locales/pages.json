@@ -1,0 +1,39 @@
+{
+  "pages": {
+    "en": {
+      "Abgeschlossen": "Completed",
+      "Abschließen": "Complete",
+      "Alle Aufgaben erledigt — neues Projekt starten!": "All tasks done — start a new project!",
+      "Aufgabe": "Task",
+      "Aufgabe anlegen": "Create Task",
+      "Aufgaben": "Tasks",
+      "Aufgaben aktiv": "Tasks active",
+      "Erste Aufgabe anlegen": "Create First Task",
+      "Erste Ressource anlegen": "Create First Resource",
+      "Fortsetzen": "Resume",
+      "Fällig": "Due",
+      "Füge Ressourcen und Aufgaben hinzu, um deine Projektplanung zu starten.": "Add resources and tasks to start your project planning.",
+      "Geplant (h)": "Planned (h)",
+      "Ist (h)": "Actual (h)",
+      "Keine Zuweisungen diese Woche": "No assignments this week",
+      "Keine aktiven Aufgaben — jetzt loslegen!": "No active tasks — get started now!",
+      "Neue Aufgabe": "New Task",
+      "Projekt einrichten": "Set Up Project",
+      "Ressourcen": "Resources",
+      "Starten": "Start",
+      "Status aktualisiert": "Status updated",
+      "Unbekannte Ressource": "Unknown Resource",
+      "Zuweisung": "Assignment",
+      "Zuweisung angepasst": "Assignment adjusted",
+      "Zuweisung anlegen": "Create Assignment",
+      "Zuweisung verschoben": "Assignment postponed",
+      "Zuweisungen diese Woche": "Assignments this week",
+      "ist überfällig": "is overdue",
+      "sind überfällig": "are overdue",
+      "{0} Aufgaben in Bearbeitung, alles im Zeitplan.": "{0} tasks in progress, everything on schedule.",
+      "{0} {1} — bitte prüfen.": "{0} {1} — please review.",
+      "Überfällig": "Overdue"
+    }
+  },
+  "v": 1
+}

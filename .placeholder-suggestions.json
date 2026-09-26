@@ -1,0 +1,57 @@
+{
+  "OrganisationenDialog.tsx": {
+    "name": "z. B. ACME GmbH",
+    "abteilungsleiter_vorname": "z. B. Hans",
+    "abteilungsleiter_nachname": "z. B. Müller",
+    "standort": "z. B. München",
+    "kuerzel": "z. B. ACME",
+    "beschreibung": "Tätigkeit, Größe, Besonderheiten...",
+    "notizen": "Interne Vermerke, Kontakt-Details..."
+  },
+  "RollenDialog.tsx": {
+    "rollenname": "z. B. Senior Developer",
+    "rollenkuerzel": "z. B. SD",
+    "kompetenzbereich": "Wähle einen Kompetenzbereich",
+    "beschreibung": "Aufgaben, Anforderungen, Qualifikationen...",
+    "notizen": "Interne Hinweise, Besonderheiten..."
+  },
+  "RessourcenDialog.tsx": {
+    "vorname": "z. B. Maria",
+    "nachname": "z. B. Schmidt",
+    "email": "z. B. maria@example.de",
+    "organisation": "Welche Organisation?",
+    "rolle": "Welche Rolle?",
+    "kostensatz": "z. B. 85,00",
+    "verfuegbarkeit_prozent": "z. B. 100",
+    "eintrittsdatum": "Wann verfügbar ab?",
+    "austrittsdatum": "Wann verfügbar bis?",
+    "notizen": "Besonderheiten, Fähigkeiten, Abwesenheiten..."
+  },
+  "AufgabenDialog.tsx": {
+    "aufgabenname": "z. B. Login implementieren",
+    "aufgabentyp": "Sammelaufgabe, Arbeitspaket oder Meilenstein?",
+    "fertigstellungsgrad": "0–100 %",
+    "geplanter_start": "Wann soll es starten?",
+    "geplantes_ende": "Wann soll es fertig sein?",
+    "geplante_dauer_tage": "Wie viele Tage einplanen?",
+    "tatsaechlicher_start": "Wann hat es angefangen?",
+    "tatsaechliches_ende": "Wann wurde es fertig?",
+    "geschaetzter_aufwand_stunden": "z. B. 40",
+    "tatsaechlicher_aufwand_stunden": "z. B. 42",
+    "prioritaet": "Niedrig, Mittel, Hoch oder Kritisch?",
+    "status": "Nicht begonnen, In Bearbeitung, Abgeschlossen oder Abgebrochen?",
+    "beschreibung": "Was ist zu tun? Anforderungen, Akzeptanzkriterien, Anmerkungen...",
+    "uebergeordnete_aufgabe": "Zu welcher Sammelaufgabe gehört diese?",
+    "vorgaenger": "Welche Aufgaben müssen vorher erledigt sein?"
+  },
+  "RessourcenzuweisungenDialog.tsx": {
+    "ressource": "Welche Ressource zuweisen?",
+    "aufgabe": "Zu welcher Aufgabe?",
+    "zuweisung_start": "Wann beginnt die Zuweisung?",
+    "zuweisung_ende": "Wann endet die Zuweisung?",
+    "geplanter_aufwand_stunden": "z. B. 40",
+    "tatsaechlicher_aufwand_stunden": "z. B. 38",
+    "auslastung_prozent": "z. B. 100",
+    "notizen": "Besonderheiten, Anmerkungen..."
+  }
+}
