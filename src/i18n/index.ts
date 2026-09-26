@@ -1342,8 +1342,8 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
         "fields": {
           "notizen": "Notes",
           "name": "Organization Name",
-          "abteilungsleiter_vorname": "Department Head First Name",
-          "abteilungsleiter_nachname": "Department Head Last Name",
+          "abteilungsleiter_vorname": "First Name Department Manager",
+          "abteilungsleiter_nachname": "Last Name Department Manager",
           "standort": "Location",
           "kuerzel": "Abbreviation",
           "beschreibung": "Description"
@@ -1386,7 +1386,7 @@ export const LABELS: Record<CoreLocale, LabelBundle> = {
           "kostensatz": "Cost Rate (€/Hour)",
           "verfuegbarkeit_prozent": "Availability (%)",
           "eintrittsdatum": "Available From",
-          "austrittsdatum": "Available To"
+          "austrittsdatum": "Available Until"
         },
         "lookups": {}
       },

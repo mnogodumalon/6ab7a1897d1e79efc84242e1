@@ -1,3 +1,5 @@
 I need to build simple project planning application that allows to manage resources and tasks and that will support planning of work both from resource and task perspective. Resources are assigned to organization and to roles, resources have a cost rate. Task are organized in hierarchy, information entered at basic level need to be aggregated to summary task. There are dependencies between tasks. Application need to allow ergonomic and user friendly entry of input data and support export of data for external reporting.
 
 I would like to add function that create a copy of existing Resource to Task allocation. After COPY I am in opened new allocation and I can directly change any parameter. It improves productivity
+
+I would like to add function that create a copy of existing Resource to Task allocation. I need new COPY button when editing existing allocation. This burtton will creaty copy and openes copied record for editing. Then record need to be saved
