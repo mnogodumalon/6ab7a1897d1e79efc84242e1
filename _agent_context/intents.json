@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "flows": [],
+  "unregistered_pages": [
+    {
+      "file": "src/pages/intents/AufgabeAbschliessenPage.tsx",
+      "summary": "/**\n * Aufgabe abschliessen — 2-Schritt-Wizard.\n * Steps: 1) Aufgabe wählen (offen/laufend) → 2) Ist-Werte & Status setzen → 3) Prüfen & aktualisieren.\n * Reads: aufgaben (filter: nicht_begonnen | in_bearbeitung). Writes: aufgaben (updateAufgabenEntry — updates).\n * Composes: IntentWizardShell, WizardStep, EntitySelectStep, Bound, Field, ChoiceGroup, StepNav, SummaryStep, SuccessStep.\n */",
+      "components": [
+        "Bound",
+        "ChoiceGroup",
+        "EntitySelectStep",
+        "Field",
+        "IntentWizardShell",
+        "StepNav",
+        "SuccessStep",
+        "SummaryStep",
+        "WizardStep"
+      ],
+      "writes": []
+    },
+    {
+      "file": "src/pages/intents/NeueAufgabePage.tsx",
+      "summary": "/**\n * Neue Aufgabe — 3-Schritt-Wizard.\n * Steps: 1) Aufgabentyp & Name → 2) Hierarchie & Abhängigkeiten (optional) → 3) Zeitplan & Status → Prüfen & anlegen.\n * Reads: aufgaben (für übergeordnete Aufgabe + Vorgänger). Writes: aufgaben (createAufgabenEntry).\n * Composes: IntentWizardShell, WizardStep, EntitySelectStep, ChoiceGroup, Bound, StepNav, SummaryStep, SuccessStep.\n */",
+      "components": [
+        "Bound",
+        "ChoiceGroup",
+        "EntitySelectStep",
+        "Field",
+        "IntentWizardShell",
+        "StepNav",
+        "SuccessStep",
+        "SummaryStep",
+        "WizardStep"
+      ],
+      "writes": []
+    },
+    {
+      "file": "src/pages/intents/RessourceZuweisenPage.tsx",
+      "summary": "/**\n * Ressource zuweisen — 3-Schritt-Wizard.\n * Steps: 1) Aufgabe auswählen → 2) Ressource auswählen (mit Verfügbarkeitsprüfung) → 3) Zeitraum & Aufwand festlegen → 4) Prüfen & anlegen.\n * Reads: aufgaben, ressourcen, ressourcenzuweisungen (Belegung). Writes: ressourcenzuweisungen (createRessourcenzuweisungenEntry).\n * Composes: IntentWizardShell, WizardStep, EntitySelectStep, AvailabilityRangePicker, BudgetTracker, StepNav, SummaryStep, SuccessStep.\n */",
+      "components": [
+        "AvailabilityRangePicker",
+        "Bound",
+        "BudgetTracker",
+        "EntitySelectStep",
+        "Field",
+        "IntentWizardShell",
+        "StepNav",
+        "SuccessStep",
+        "SummaryStep",
+        "WizardStep"
+      ],
+      "writes": []
+    }
+  ]
+}

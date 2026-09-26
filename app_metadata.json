@@ -433,7 +433,7 @@
           "in_mobile_list": false,
           "in_text": false,
           "in_structured_search": null,
-          "in_fulltext_search": null,
+          "in_fulltext_search": false,
           "in_expert_search": true,
           "precision": null
         },
@@ -449,7 +449,7 @@
           "in_mobile_list": false,
           "in_text": false,
           "in_structured_search": null,
-          "in_fulltext_search": null,
+          "in_fulltext_search": false,
           "in_expert_search": true
         },
         "geplantes_ende": {
@@ -464,7 +464,7 @@
           "in_mobile_list": false,
           "in_text": false,
           "in_structured_search": null,
-          "in_fulltext_search": null,
+          "in_fulltext_search": true,
           "in_expert_search": true
         },
         "geplante_dauer_tage": {
@@ -479,7 +479,7 @@
           "in_mobile_list": false,
           "in_text": false,
           "in_structured_search": null,
-          "in_fulltext_search": null,
+          "in_fulltext_search": false,
           "in_expert_search": true,
           "precision": null
         },
@@ -495,7 +495,7 @@
           "in_mobile_list": false,
           "in_text": false,
           "in_structured_search": null,
-          "in_fulltext_search": null,
+          "in_fulltext_search": false,
           "in_expert_search": true
         },
         "tatsaechliches_ende": {
@@ -510,7 +510,7 @@
           "in_mobile_list": false,
           "in_text": false,
           "in_structured_search": null,
-          "in_fulltext_search": null,
+          "in_fulltext_search": false,
           "in_expert_search": true
         },
         "geschaetzter_aufwand_stunden": {
@@ -525,7 +525,7 @@
           "in_mobile_list": false,
           "in_text": false,
           "in_structured_search": null,
-          "in_fulltext_search": null,
+          "in_fulltext_search": false,
           "in_expert_search": true,
           "precision": null
         },
@@ -541,7 +541,7 @@
           "in_mobile_list": false,
           "in_text": false,
           "in_structured_search": null,
-          "in_fulltext_search": null,
+          "in_fulltext_search": false,
           "in_expert_search": true,
           "precision": null
         },
@@ -615,7 +615,7 @@
           "in_mobile_list": false,
           "in_text": false,
           "in_structured_search": null,
-          "in_fulltext_search": null,
+          "in_fulltext_search": false,
           "in_expert_search": true
         },
         "uebergeordnete_aufgabe": {
@@ -629,8 +629,8 @@
           "in_list": false,
           "in_mobile_list": false,
           "in_text": false,
-          "in_structured_search": null,
-          "in_fulltext_search": null,
+          "in_structured_search": "simple",
+          "in_fulltext_search": true,
           "in_expert_search": true,
           "lookup_app": "https://my.living-apps.de/rest/apps/6ab7a17fc5b563a01dbfe73f"
         },

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "uebersicht",
+      "component": "Overview",
+      "title": "Ressourcen- & Aufgabenverwaltung",
+      "endpoints": [
+        {
+          "entity": "organisationen",
+          "op": "list",
+          "fields": [
+            "name"
+          ]
+        }
+      ]
+    }
+  ]
+}
